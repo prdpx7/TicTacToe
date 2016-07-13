@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe</title>
+    <!-- Latest compiled and minified CSS -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+    <style>
+    img{
+      border: 10px solid transparent;
+      width: 150px;
+    }
+    #matrix img[src="./C_TextMode/empty_tile.png"]:hover{
+      opacity: 0.4;
+      padding: 30px;
+    }
+    </style>
+  </head>
+    <a href="https://github.com/zuck007/TicTacToe/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://aral.github.io/fork-me-on-github-retina-ribbons/right-turquoise@2x.png" alt="Fork me on GitHub"></a>
+    <body class="responsive">
+      <h1 class="text-center">TicTacToe</h1>
+      <h2 class="text-center">User <span class="glyphicon glyphicon-menu-right"></span>  X</h2>
+      <h2 class="text-center">Bot <span class="glyphicon glyphicon-menu-right"></span> O</h2>
+      <div id="matrix">
+        <img id="00" class="btn" src="./C_TextMode/empty_tile.png" alt="X"/>
+        <img id="01" class="btn" src="./C_TextMode/empty_tile.png" alt="X"/>
+        <img id="02" class="btn" src="./C_TextMode/empty_tile.png" alt="X"/><br/>
+        <img id="10" class="btn" src="./C_TextMode/empty_tile.png" alt="X"/>
+        <img id="11" class="btn" src="./C_TextMode/empty_tile.png"/>
+        <img id="12" class="btn" src="./C_TextMode/empty_tile.png"/><br/>
+        <img id="20" class="btn" src="./C_TextMode/empty_tile.png"/>
+        <img id="21" class="btn" src="./C_TextMode/empty_tile.png"/>
+        <img id="22" class="btn" src="./C_TextMode/empty_tile.png"/>
+      </div>
+    </body>
+</html>
