@@ -16,7 +16,6 @@ void help()
         
         printf("\n");
     }
-
 }
 void display(char mat[3][4])
 {
@@ -96,8 +95,6 @@ int find_move(char mat[3][4],char ch, int flag)
     //X   X
     //  0
     //    X
-    
-    
     if( mat[1][1] == '_')
         return 11;
     if(ch == 'X')
@@ -135,9 +132,6 @@ int find_move(char mat[3][4],char ch, int flag)
 
     for(i=0;i<3;++i)
     {
-
-        //printf("pre_win_moves[%d]=%s ,dig=%s\n",i,pre_win_moves[i],dig);
-        //printf("pre_win_moves[%d]=%s ,inv_dig=%s\n",i,pre_win_moves[i],inv_dig);
         if(strcmp(pre_win_moves[i],dig)==0)
             return i*10 + i;
         if(strcmp(pre_win_moves[i],inv_dig)==0)
@@ -145,8 +139,6 @@ int find_move(char mat[3][4],char ch, int flag)
         
         for(j=0;j<3;++j)
         {
-            //printf("pre_win_moves[%d]=%s , mat[%d]=%s\n",j,pre_win_moves[j],i,mat[i]);
-            //printf("pre_win_moves[%d]=%s , tmp_mat[%d]=%s\n",j,pre_win_moves[j],i,tmp_mat[i]);
             if(strcmp(pre_win_moves[j],mat[i])==0)
             {
                 return i*10 + j;
@@ -156,9 +148,7 @@ int find_move(char mat[3][4],char ch, int flag)
             
         }
     }
-        //random block selection
     return chk_empty_cell(empty);
-
 }
 
 int win(char mat[3][4])
@@ -193,9 +183,6 @@ int win(char mat[3][4])
     }
     return 0;
 }
-
-
-
 int main()
 {
     char mat[3][4]={{'_','_','_','\0'},{'_','_','_','\0'},{'_','_','_','\0'}};
@@ -275,7 +262,6 @@ int main()
         }
     
     }
-   
     printf("\n\n....DRAW......\n");
     return 0;
 }
