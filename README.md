@@ -1,7 +1,7 @@
 # TicTacToe
 A Simple TicTacToe WebApp
 #### Live Demo
-* [CodePen](http://codepen.io/zuck007/full/LkOvjv/)
+* Play it [here](https://zuck007.github.io/TicTacToe/)
 
   ![imgur](http://i.imgur.com/0W7Evci.gif)
 
